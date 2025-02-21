@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      color: darkgreen;
+    }
+
+    h2 {
+      color: #111888;
+    }
+    
+    h3,
+    h4 {
+      color: #F87111;
+    }
+
+    .green {
+      color: maroon;
+    }
+
+    #purple {
+      color: tomato;
+    }
+
+    .green > span {
+      font: 50px;
+    }
+
+    .green li {
+      color: rgb(125, 150, 255)
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1 class="green">Heading</h1>
+  <h2>선택자</h2>
+  <h3>연습</h3>
+  <h4>반가워요</h4>
+  <p id="purple">과목 목록</p>
+  <ul class="green">
+    <li>파이썬</li>
+    <li>알고리즘</li>
+    <li>웹
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>PYTHON</li>
+      </ol>
+    </li>
+  </ul>
+  <p class="green">Lorem, <span>ipsum</span> dolor.</p>
+  <!-- 자식은 부모 컨텐츠 안에 들어가있어야함. 들여쓰기로 구분x -->
+   <!-- p와 /p 사이에 들어있어야 함 -->
+</body>
+
+</html>
