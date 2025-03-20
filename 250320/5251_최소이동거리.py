@@ -16,7 +16,7 @@ for tc in range(1, T+1):
     dists[0] = 0
 
     while pq:
-        node, dist = heapq.heappop(pq)
+        dist, node = heapq.heappop(pq)  # 우선순위 큐이기 때문에 거리 먼저 저장
 
         if dists[node] < dist:
             continue
@@ -30,6 +30,6 @@ for tc in range(1, T+1):
                 continue
 
             dists[next_node] = new_dist
-            heapq.heappush(pq, (next_node, next_dist))
+            heapq.heappush(pq, (new_dist, next_node))
 
-    print(f'#{tc} {dists[N]}')
+    print(f'#{tc} {dists[N]}')  # N번을 인덱스 넘버로 삼아 출력
