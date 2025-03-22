@@ -1,3 +1,5 @@
+import sys
+sys.stdin = open('input4485.txt')
 import heapq
 
 dr = [-1, 1, 0, 0]
@@ -40,7 +42,7 @@ while True:
         matrix = [list(map(int, input().split())) for _ in range(N)]
 
         answer = dijkstra(0, 0)
-        print(f'problem {tc}: {answer}')
+        print(f'Problem {tc}: {answer}')
 
         tc += 1
 
